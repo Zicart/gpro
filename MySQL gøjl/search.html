@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="da">
+    
+<html>
+<head>
+    <title>HTML form</title>
+    <meta charset="ISO-8859-1">
+    <meta name="keywords" content="Form">
+    <!-- <link rel="stylesheet" href="form_css.css"> -->
+</head>
+
+<body>
+
+<form name="formular" id="formular" method="post" action="edit_data.php" autocomplete="on" enctype='multipart/form-data'>
+
+            <fieldset>
+                <legend>Søgning</legend>
+                <div><input type="search" name="search" id="search" size="100" placeholder="Søg..."></div>
+                <div><label>Søg efter:
+                        <select name="column" id="column">
+                            <option value="username">Brugernavn</option>
+                            <option value="first_name">Fornavn</option>
+                            <option value="last_name">Efternavn</option>
+                            <option value="age">Alder</option>
+                        </select>
+                    </label>
+                </div>
+                    
+                <div><label>Sortér stigende:<input type="radio" name="sort" id="sort" value="ASC"></label></div>
+                <div><label>Sortér faldende:<input type="radio" name="sort" id="sort" value="DESC"></label></div>
+            </fieldset>
+
+    <div><input type="submit" name="search_button" id="ok" value="Søg"></div>
+</form>
+
+</body>
+</html>
